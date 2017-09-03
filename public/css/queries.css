@@ -1,0 +1,171 @@
+/**
+*   media query for RWD
+*/
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media (min-width: 43.75em) {
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.125;
+    }
+    h2 {
+        font-size: 2em;
+        line-height: 1.25;
+    }
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+    }
+    h4 {
+        line-height: 1.22222222;
+    }
+    blockquote {
+        font-size: 1.5em;
+        line-height: 1.45833333;
+    }
+}
+
+@media (min-width: 56.25em) {
+    h1 {
+        font-size: 3em; line-height: 1.05;
+    }
+    h2 {
+        font-size: 2.25em; line-height: 1.25;
+    }
+    h3 {
+        font-size: 1.75em; line-height: 1.25;
+    }
+}
+
+@media all and (max-width: 1068px) {
+
+}
+@media all and (min-width: 1280px) {
+
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media all and (min-width: 615px) and (max-width: 991px) {
+
+}
+
+@media all and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media all and (min-width: 991px) {
+
+}
+
+@media (max-width: 800px) {
+    .stacktable.large-only {
+        display: none;
+    }
+    .stacktable.small-only {
+        display: table;
+    }
+    .container-table td:nth-child(4),
+    .container-table th:nth-child(4) {
+        display: none;
+    }
+
+    .jrt table,
+    .jrt thead,
+    .jrt tbody,
+    .jrt th,
+    .jrt td,
+    .jrt tr {
+        display: block;
+        text-align: left
+    }
+    /* hide table headers (but not display: none;, for accessibility) */
+    .jrt thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .jrt tr {
+        border: 1px solid #ccc;
+    }
+    .jrt td {
+        /* behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        font-weight: normal;
+    }
+    .jrt td:before {
+        /* becomes the table header */
+        position: absolute;
+        /* top/left values mimic padding */
+        top: 8px;
+        /* mimic padding top */
+        left: 6px;
+        /* mimic padding left */
+        width: 45%;
+        text-align: left!important;
+        padding-right: 0;
+        font-weight: bold;
+    }
+}
+
+/* Portrait */
+@media screen and (orientation:portrait) {
+
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+
+}
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+
+}
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+
+}
